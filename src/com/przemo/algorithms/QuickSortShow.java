@@ -1,9 +1,17 @@
-package com.przemo.Algorithms;
+package com.przemo.algorithms;
 
 import java.util.Arrays;
 
 public class QuickSortShow {
-    private static final int[] INPUT = new int[]{1, 3, 4, 5, 8, 6, 7, 2};
+    private static int[] INPUT = new int[]{1, 3, 4, 5, 8, 6, 7, 2};
+
+    public int[] getInput() {
+        return Arrays.copyOf(INPUT, INPUT.length);
+    }
+
+    public void setInput(int[] newInput) {
+        INPUT = Arrays.copyOf(newInput, newInput.length);
+    }
 
     public void quickSort(int[] arr, int low, int high) {
         if (low < high) {

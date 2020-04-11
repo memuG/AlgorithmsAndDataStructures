@@ -1,4 +1,4 @@
-package com.przemo.Algorithms;
+package com.przemo.algorithms;
 
 import java.util.Arrays;
 
