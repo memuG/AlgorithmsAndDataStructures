@@ -16,7 +16,8 @@ public class LinkedListShow implements IShow{
         ll.add(99);
         ll.add(2, 55);
         ll.get(1);
-        return "LinkedListShow [ll=" + ll + "]";
+        ll.get(1);
+        return "LinkedList -> " + ll;
     }
 
     
