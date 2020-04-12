@@ -15,6 +15,8 @@ public class Main {
         System.out.println("Set: " + new SetShow().getNotes());
         System.out.println("Map: " + new MapShow().getNotes());
         // Algorithms
+        System.out.println();
+        System.out.println();
         System.out.println("InsertionSort: " + new InsertionSortShow().getNotes());
         System.out.println("QuickSort: " + new QuickSortShow().getNotes());
     }
