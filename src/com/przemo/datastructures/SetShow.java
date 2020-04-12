@@ -9,9 +9,9 @@ import java.util.TreeSet;
 import com.przemo.IShow;
 
 public class SetShow implements IShow {
-    private Set<Object> hs = new HashSet<>();
-    private Set<Object> ts = new TreeSet<>();
-    private Set<Object> lhs = new LinkedHashSet<>();
+    private HashSet<Object> hs = new HashSet<>();
+    private TreeSet<Object> ts = new TreeSet<>();
+    private LinkedHashSet<Object> lhs = new LinkedHashSet<>();
 
     @Override
     public String toString() {
@@ -36,6 +36,9 @@ public class SetShow implements IShow {
         ts.add(3);
         ts.add(5);
         ts.add(4);
+        System.out.println("TreeSet headSet(4): " + ts.headSet(4));
+        System.out.println("TreeSet tailSet(1): " + ts.tailSet(1));
+        System.out.println("TreeSet subSet(3,5): " + ts.subSet(3, 5));
 
         return "HashSet -> " + hs.toString() + " LinkedHashSet ->" + lhs.toString() + " TreeSet ->" + ts.toString();
     }
