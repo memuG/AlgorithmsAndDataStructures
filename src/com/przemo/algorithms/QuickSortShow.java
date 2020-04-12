@@ -3,7 +3,7 @@ package com.przemo.algorithms;
 import java.util.Arrays;
 
 public class QuickSortShow {
-    private static int[] INPUT = new int[]{1, 3, 4, 5, 8, 6, 7, 2};
+    private static int[] INPUT = new int[] { 1, 3, 4, 5, 8, 6, 7, 2 };
 
     public int[] getInput() {
         return Arrays.copyOf(INPUT, INPUT.length);

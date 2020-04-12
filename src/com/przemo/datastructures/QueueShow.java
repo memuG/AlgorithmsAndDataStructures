@@ -19,6 +19,4 @@ public class QueueShow implements IShow {
         return "q -> " + q.toString();
     }
 
-    
-
 }

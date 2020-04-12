@@ -15,7 +15,7 @@ public class PriorityQueueShow implements IShow {
 
     @Override
     public String toString() {
-        int[] ia = {1, 5, 3, 7, 6, 9, 8};
+        int[] ia = { 1, 5, 3, 7, 6, 9, 8 };
         PriorityQueue<Integer> pq1 = new PriorityQueue<>();
         for (int x : ia) {
             pq1.offer(x);

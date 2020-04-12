@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 import com.przemo.IShow;
 
-public class LinkedListShow implements IShow{
+public class LinkedListShow implements IShow {
 
     LinkedList<Integer> ll = new LinkedList<>();
 
@@ -19,7 +19,5 @@ public class LinkedListShow implements IShow{
         ll.get(1);
         return "LinkedList -> " + ll;
     }
-
-    
 
 }

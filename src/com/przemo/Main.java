@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Queue: " + new QueueShow().getNotes());
         System.out.println("PriorityQueue: " + new PriorityQueueShow().getNotes());
         System.out.println("Set: " + new SetShow().getNotes());
-       // Algorithms
+        // Algorithms
         System.out.println("InsertionSort: " + new InsertionSortShow().getNotes());
         System.out.println("QuickSort: " + new QuickSortShow().getNotes());
     }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSortShow {
 
-    private static final int[] INPUT = new int[]{1, 3, 4, 5, 8, 6, 7, 2};
+    private static final int[] INPUT = new int[] { 1, 3, 4, 5, 8, 6, 7, 2 };
 
     private int[] insertionSort(int[] array) {
         for (int i = 1; i < array.length; ++i) {
@@ -18,7 +18,6 @@ public class InsertionSortShow {
         }
         return array;
     }
-
 
     public String getNotes() {
         return Arrays.toString(insertionSort(INPUT));

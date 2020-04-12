@@ -6,11 +6,11 @@ import java.util.Vector;
 
 public class ArraysShow {
     private List<Integer> arrayList = new ArrayList<>();
-    private Vector<Integer> vec =  new Vector<>();
+    private Vector<Integer> vec = new Vector<>();
 
     public String getNotes() {
         // vector grows 100% of its size - synchronized
-        //ArrayList grows 50% of its size - not synchronized
+        // ArrayList grows 50% of its size - not synchronized
         arrayList.add(4);
         arrayList.add(8);
         arrayList.add(16);
@@ -25,7 +25,7 @@ public class ArraysShow {
 
     @Override
     public String toString() {
-        return "ArrayList -> " + arrayList.toString() +  " Vector -> " + vec.toString();
+        return "ArrayList -> " + arrayList.toString() + " Vector -> " + vec.toString();
     }
-    
+
 }
