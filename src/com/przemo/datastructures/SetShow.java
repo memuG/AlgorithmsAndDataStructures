@@ -16,7 +16,7 @@ public class SetShow implements IShow {
     public String toString() {
         boolean[] ba = new boolean[5];
         ba[0] = hs.add("a");
-        ba[1] = hs.add(new Integer(42));
+        ba[1] = hs.add(Integer.valueOf(42));
         ba[2] = hs.add("b");
         ba[3] = hs.add("a");
         ba[4] = hs.add(new Object());
