@@ -17,6 +17,10 @@ public class LinkedListShow implements IShow {
         ll.add(2, 55);
         ll.get(1);
         ll.get(1);
+        ll.pollLast();
+        System.out.println(ll.peekFirst());
+        ll.pop();
+        ll.push(4);
         return "LinkedList -> " + ll;
     }
 
