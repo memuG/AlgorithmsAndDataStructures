@@ -1,6 +1,7 @@
 package com.przemo;
 
 import com.przemo.algorithms.InsertionSortShow;
+import com.przemo.algorithms.MergeSortShow;
 import com.przemo.algorithms.QuickSortShow;
 import com.przemo.datastructures.*;
 
@@ -19,5 +20,6 @@ public class Main {
         System.out.println();
         System.out.println("InsertionSort: " + new InsertionSortShow().getNotes());
         System.out.println("QuickSort: " + new QuickSortShow().getNotes());
+        System.out.println("QuickSort: " + new MergeSortShow().getNotes());
     }
 }
