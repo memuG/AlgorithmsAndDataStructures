@@ -18,20 +18,26 @@ public class MergeSortShow implements IShow {
         }
     }
 
-    private void merge(int[] a, int lowIndex, int midIndex, int highIndex) {
+    int[] expected = {1, 2, 3, 4};
+    int[] input = {3, 4, 1, 2};
+
+    public int[] merge(int[] a, int lowIndex, int midIndex, int highIndex) {
         int counter = 0;
-        int[] merged = new int[highIndex];
+        int[] merged = new int[highIndex + 1];
         for (int i = lowIndex; i < midIndex; i++) {
-            for (int j = midIndex; j < highIndex; j++) {
-                if (a[i] > a[j]) {
+            for (int j = midIndex; j <= highIndex; j++) {
+                if (a[i] >= a[j]) {
                     merged[counter] = a[j];
+                    j++;
                     // swap(a, i, j);
                 } else {
                     merged[counter] = a[i];
+                    i++;
                 }
                 counter++;
             }
         }
+        return merged;
 //        for (int i = 0; i < merged.length; i++) {
 //            a[lowIndex + i] = merged[i];
 //        }

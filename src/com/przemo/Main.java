@@ -20,6 +20,6 @@ public class Main {
         System.out.println();
         System.out.println("InsertionSort: " + new InsertionSortShow().getNotes());
         System.out.println("QuickSort: " + new QuickSortShow().getNotes());
-        System.out.println("QuickSort: " + new MergeSortShow().getNotes());
+        //System.out.println("MergeSort: " + new MergeSortShow().getNotes());
     }
 }
