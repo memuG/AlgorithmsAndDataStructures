@@ -3,7 +3,7 @@ package com.przemo.algorithms;
 import java.util.Arrays;
 
 public class QuickSortShow {
-    private static int[] INPUT = new int[] { 1, 3, 4, 5, 8, 6, 7, 2 };
+    private static int[] INPUT = new int[] { 1, 3, 4, 5, 8, 0, 6, 7, 2 };
 
     public int[] getInput() {
         return Arrays.copyOf(INPUT, INPUT.length);
@@ -39,6 +39,11 @@ public class QuickSortShow {
         int iElement = arr[i];
         arr[i] = arr[j];
         arr[j] = iElement;
+    }
+
+    public static void main(String[] args) {
+        new QuickSortShow().quickSort(INPUT, 0, INPUT.length - 1);
+        System.out.println(Arrays.toString(INPUT));
     }
 
     public String getNotes() {
