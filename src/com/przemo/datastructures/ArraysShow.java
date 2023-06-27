@@ -5,10 +5,14 @@ import java.util.List;
 import java.util.Vector;
 
 public class ArraysShow {
+    private int[] a = new int[5];
     private List<Integer> arrayList = new ArrayList<>();
     private Vector<Integer> vec = new Vector<>();
 
     public String getNotes() {
+        a[0] = 3;
+        // AIOoBException
+        a[5] = 4;
         // vector grows 100% of its size - synchronized
         // ArrayList grows 50% of its size - not synchronized
         arrayList.add(4);
